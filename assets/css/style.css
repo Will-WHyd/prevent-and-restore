@@ -1,3 +1,9 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 /* General styles */
 
 body {
@@ -27,12 +33,11 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit;
-    font-size: 120%;
+    color: inherit; 
 }
 
 #menu {
-    font-size: 120%;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style: none;
 }
@@ -48,6 +53,8 @@ nav {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    /* flex-direction:row-reverse;
+    justify-content: flex-end; */
     top: 100%;
 }
 
@@ -65,7 +72,41 @@ nav {
     margin-right: 2.5rem;
 }
 
-/* Body styles */
+/* Main styles */
+main {
+    /* make main element take up any space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url('../images/sunset-banner.png') no-repeat center center/cover;
+    position: relative;
+}
+
+#hero-main-text {
+    background-color: rgba(60, 60, 50, 0.7);
+    color: #ffffff;
+    width: 40%;
+    font-size: 110%;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    padding: 1rem;
+    
+}
+
+#hero-image-overlay {
+    position: relative;
+    background-color: rgba(60, 60, 50, 0.4);
+}
+
+
+/* Footer styles */
 
 
 /* Media query: tablets and larger (768px and up) */
