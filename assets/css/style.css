@@ -1,0 +1,93 @@
+/* General styles */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* generic project styles */
+    color: #3a3a3a;
+    
+}
+
+/* Header styles */
+
+header {
+    color: #ffffff;
+    background-color: #004643;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 120%;
+}
+
+#menu {
+    font-size: 120%;
+    letter-spacing: 4px;
+    list-style: none;
+}
+
+/* navbar styles with dropdown toggle */
+
+nav {
+    position: absolute;
+    color: #ffffff;
+    background-color: #004643;
+    left: 0;
+    padding: 0 1rem;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+/* Body styles */
+
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}

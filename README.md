@@ -21,3 +21,11 @@ The users are directed to where they can find futher information
 ### List of tasks needed to accomplish
 Set up index.html to hold the basic info on home page
 Set up contact/further info page to hold links
+
+## 2 Wireframe Structure
+
+Developed layout approach for project. Home Page, Signs/Info on Radicalization page, Resources/Contact page outlined. Goal is to ensure responsive design.
+Fonts and color scheme not yet decided
+
+## 3 Document Setup
+Github project and user tasks set up. 
