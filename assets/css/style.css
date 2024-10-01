@@ -53,6 +53,10 @@ header a {
     list-style: none;
 }
 
+.active {
+    border-bottom: 1px solid #252525;
+}
+
 /* navbar styles with dropdown toggle */
 
 nav {
@@ -159,6 +163,28 @@ main {
     text-decoration: none;
     color: #ca3c25;
     border: solid 2px #3a3a3a;
+}
+
+#signs-detail {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex: 1 0 50%; */
+    justify-content: space-around;
+    background-image: url('assets/images/pexels-hikaique-109919.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.spot-the-signs-d-tile {
+    margin: 10px 5px;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #004543;
+    text-align: center;
+    flex-basis: 200px;
+    border: 2px solid white;
 }
 
 /* Footer styles */
