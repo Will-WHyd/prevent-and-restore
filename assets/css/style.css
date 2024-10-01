@@ -144,12 +144,22 @@ main {
     color: #ffffff;
 }
 
-#signs-banner div {
+#signs-banner {
     /* display: flex; */
+    width: 100%;
     background-color: #3a3a3a;
-    padding: 2rem;
+    padding: 1em 10%;
 }
 
+#signs-banner p {
+    color: #ffffff;
+}
+
+#signs-banner a {
+    text-decoration: none;
+    color: #ca3c25;
+    border: solid 2px #3a3a3a;
+}
 
 /* Footer styles */
 
