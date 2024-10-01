@@ -13,6 +13,7 @@ body {
 
     /* generic project styles */
     color: #3a3a3a;
+    background-color: #a28f9d;
 }
 
 h1, h2, h3 {
@@ -116,20 +117,37 @@ main {
 }
 
 #intro-video {
-    position: relative;
-    flex-direction: row;
-    margin: 2rem 10vw;
-    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    
 }
 
 #intro-video-player {
-    flex-basis: 300px;
-    width: 500px;
+    width: 90vw;
+    flex: 1 0 60%;
+}
+
+#intro-video-player > video {
+    width: 100%;
 }
 
 #intro-video-textbox {
-    flex-basis: 300px;
-    width: 40%;
+    flex: 1 0 40%;
+    margin: 1em;
+    background-color: rgba(60, 60, 50, 0.7)
+    
+}
+
+#intro-video-tetbox > h3, #intro-video-textbox p {
+    color: #ffffff;
+}
+
+#signs-banner div {
+    /* display: flex; */
+    background-color: #3a3a3a;
+    padding: 2rem;
 }
 
 
@@ -169,6 +187,25 @@ main {
         padding: 1rem;
         
     }
+
+    #intro-video {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* #intro-video-player {
+        flex: 1 0 60%;
+    }
+
+    #intro-video-player video {
+        width: 100%;
+    }
+
+    #intro-video-textbox {
+        flex: 1 0 40%
+        max-width: 40%;
+        
+    } */
 }
 
 @media screen and (min-width: 992px) {
