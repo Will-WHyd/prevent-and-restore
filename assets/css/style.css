@@ -213,6 +213,10 @@ main {
     margin: 5px;
 }
 
+#signs-radio-display-zone {
+    display: relative;
+}
+
 .display-zone-card {
     flex-basis: 400px;
     color: #ffffff;
@@ -224,8 +228,15 @@ main {
     margin: 5px;
 }
 
+.hidden-content {
+    display: none;
+}
 
-#sign-1:checked~#sign-1-display {
+#sign-1:checked~.sign-1-display {
+    display: block;
+}
+
+#sign-2:checked~.sign-2-display {
     display: block;
 }
 
