@@ -379,19 +379,15 @@ main {
         justify-content: space-around;
     }
 
-    /* #intro-video-player {
-        flex: 1 0 60%;
-    }
-
-    #intro-video-player video {
+    #p-goals {
+        display: flex;
+        flex-flow: row wrap;
         width: 100%;
     }
 
-    #intro-video-textbox {
-        flex: 1 0 40%
-        max-width: 40%;
-        
-    } */
+    #p-goals > div {
+        width: 50%;
+    }
 
     #radio-signs {
         width: 70%;
