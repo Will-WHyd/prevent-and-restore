@@ -193,13 +193,18 @@ main {
 
 #radio-signs {
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     border: 2px solid black;
+    width: 90%;
+    margin: 10px auto;
 }
 
 #signs-radio-input-container {
     border: 2px solid black;
-    flex-basis: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
 
 }
 
@@ -232,6 +237,11 @@ main {
     border: 2px solid white;
     padding: 15px;
     margin: 10px;
+}
+
+.display-zone-card p {
+    margin: 10px auto;
+    padding: 2em 4em 4em;
 }
 
 
@@ -310,6 +320,14 @@ main {
         max-width: 40%;
         
     } */
+
+    .display-zone-card {
+        flex-flow: column;
+    }
+
+    .display-zone-card p {
+        max-width: 40vw;
+    }
 }
 
 @media screen and (min-width: 992px) {
