@@ -13,7 +13,7 @@ body {
 
     /* generic project styles */
     color: #3a3a3a;
-    background-color: #a28f9d;
+    /* background-color: #a28f9d; */
 }
 
 h1, h2, h3 {
@@ -198,12 +198,13 @@ main {
 }
 
 #signs-radio-input-container {
-    display:flex;
+    border: 2px solid black;
+    flex-basis: 200px;
 
 }
 
 .signs-radio-card {
-    flex-basis: 200px;
+    
     color: #ffffff;
     background-color: #004543;
     text-align: center;
@@ -213,31 +214,45 @@ main {
     margin: 5px;
 }
 
-#signs-radio-display-zone {
-    display: relative;
-}
+/* #signs-radio-display-zone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+} */
 
 .display-zone-card {
-    flex-basis: 400px;
+    
+    display:none;
+    flex: 1 1 30%;
     color: #ffffff;
     background-color: #ca3c25;
     text-align: center;
-    flex-grow: 1;
     border: 2px solid white;
     padding: 15px;
-    margin: 5px;
+    margin: 10px;
 }
 
-.hidden-content {
-    display: none;
+
+/* #sign-1:checked ~ #signs-radio-display-zone #sign-1-display {
+    display: block; 
 }
 
-#sign-1:checked~.sign-1-display {
-    display: block;
+#sign-2:checked ~ #signs-radio-display-zone #sign-2-display {
+    display: block; 
+} */
+
+/* #sign-1:checked + label + #sign-1-display {
+    display: block; 
 }
 
-#sign-2:checked~.sign-2-display {
-    display: block;
+#sign-2:checked + label + #sign-2-display {
+    display: block; 
+} */
+
+.sign-selector:checked + label + .display-zone-card {
+    display: flex;
 }
 
 /* Footer styles */
